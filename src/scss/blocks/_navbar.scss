@@ -1,14 +1,20 @@
 .test{
     width: 70%;
     font-size: 2rem;
-    padding-top: 200px;
+    margin: 0 auto;
+    padding-block: 200px;
+}
+
+.test2{
+    padding: 50px;
+    background-color: $white;
 }
 
 .navbar{
     position: fixed;
     z-index: 5;
     width: 100%;
-    background-color: grey;
+    background-color: $black;
 }
 
 .content{
@@ -23,7 +29,6 @@
 }
 
 .nav__list{
-    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,11 +39,11 @@
     
         a{
             text-decoration: none;
-            color: white;
+            color: $white;
         }
     }
 }
 
 .sticky{
-    background-color: black;
+    background-color: $turquoise;
 }
