@@ -1,8 +1,44 @@
-.navbar{
-    position: fixed;
-    background-color: green;
+.test{
+    width: 70%;
+    font-size: 2rem;
+    padding-top: 200px;
 }
 
-.kup{
-    height: 200vh;
+.navbar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: grey;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+
+    @media(min-width: 800px){
+        width: 80%;
+    }
+}
+
+.nav__list{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+
+    li{
+        list-style: none;
+    
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.sticky{
+    background-color: black;
 }
