@@ -14,10 +14,10 @@ export function Navbar(){
 
     return(
         <>
-        <nav className={ scroll>150 ? 'navbar sticky' : 'navbar'} onScroll={(e) => e.currentTarget.class="scroll"}>
+        <nav className={scroll>50 ? 'navbar sticky' : 'navbar'} onScroll={(e) => e.currentTarget.class="scroll"}>
             <div className="content">
                 <div className="logo">
-                    <li><a href="#"></a></li>
+                    <a href="#"></a>
                 </div>
 
                 <ul className="nav__list">
