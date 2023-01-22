@@ -10,6 +10,17 @@ body{
     background-color: $black
 }
 
+.logotype{
+    font-family: $font-logotype;
+    font-size: 2rem;
+    line-height: 1.1em;
+    color: $turquoise;
+}
+
+.logotype--sticky{
+    color: $black;
+}
+
 .display-mobile{
     display: block;
 

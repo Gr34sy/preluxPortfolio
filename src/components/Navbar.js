@@ -23,6 +23,9 @@ export function Navbar(){
             <div className="content">
                 <div className="logo">
                     <a href="#"></a>
+                    <p className={scroll>50 ? 'logotype logotype--sticky' : 'logotype'}>
+                        Prelux Art
+                    </p>
                 </div>
 
                 <ul className="nav__list">
