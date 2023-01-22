@@ -1,8 +1,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
 export function Navbar(){
     const [scroll, setScroll] = useState(0);
+    const [showMobileList, setShowMobileList] = useState(false);
 
     useEffect(() =>{
         window.addEventListener('scroll', () => {
@@ -13,6 +18,7 @@ export function Navbar(){
     },[])
 
     return(
+        <>
         <nav className={scroll>50 ? 'navbar sticky' : 'navbar'} onScroll={(e) => e.currentTarget.class="scroll"}>
             <div className="content">
                 <div className="logo">
@@ -20,12 +26,29 @@ export function Navbar(){
                 </div>
 
                 <ul className="nav__list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Art</a></li>
-                    <li><a href="#">Sdad</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a className="custom-link" href="#">Home</a></li>
+                    <li><a className="custom-link" href="#">Art</a></li>
+                    <li><a className="custom-link" href="#">Sdad</a></li>
+                    <li><a className="custom-link" href="#">Contact</a></li>
                 </ul>
+
+                { !showMobileList && <div className="hamburger-icon display-mobile" onClick={() => setShowMobileList(true)}>
+                    <FontAwesomeIcon icon={faBars}/>
+                </div>}
+
+                { showMobileList && <div className="x-icon mobile-display" onClick={() => setShowMobileList(false)}>
+                    <FontAwesomeIcon icon={faXmark}/>
+                </div>}
             </div>
         </nav>
+        
+        { showMobileList && 
+        <ul className="nav__list--mobile display-mobile">
+            <li><a className="custom-link" href="#">Home</a></li>
+            <li><a className="custom-link" href="#">Art</a></li>
+            <li><a className="custom-link" href="#">Sdad</a></li>
+            <li><a className="custom-link" href="#">Contact</a></li>
+        </ul>}
+        </>
     )
 }
