@@ -35,10 +35,6 @@
     justify-content: space-between;
     width: 100%;
     padding-inline: 20px;
-
-    @media(min-width: 800px){
-        padding-inline: 80px;
-    }
 }
 
 .nav__list{
@@ -46,7 +42,6 @@
     display: none;
     align-items: center;
     justify-content: center;
-    width: 35%;
 
     li{
         list-style: none;
