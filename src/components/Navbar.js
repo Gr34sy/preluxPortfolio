@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
+import logo from '../assets/logo.png';
+
 export function Navbar(){
     const [scroll, setScroll] = useState(0);
     const [showMobileList, setShowMobileList] = useState(false);
@@ -22,7 +24,9 @@ export function Navbar(){
         <nav className={scroll>50 ? 'navbar sticky' : 'navbar'} onScroll={(e) => e.currentTarget.class="scroll"}>
             <div className="content">
                 <div className="logo">
-                    <a href="#"></a>
+                    <a href="#">
+                        <img src={logo} alt="logo"/>
+                    </a>
                     <p className={scroll>50 ? 'logotype logotype--sticky' : 'logotype'}>
                         Prelux Art
                     </p>
