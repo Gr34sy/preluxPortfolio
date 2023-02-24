@@ -6,6 +6,7 @@ import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 
 export function FirebaseTest(){
 const [imagesRefs, setImagesRefs] = useState([]);
+const [isLoaded, setIsLoaded] = useState(false);
 
 useEffect(() => {
     const storage = getStorage(firebaseApp);
@@ -13,12 +14,8 @@ useEffect(() => {
 
     listAll(listRef)
     .then((res) => {
-        res.items.forEach((itemRef) => {
-            setImagesRefs([ ...imagesRefs, itemRef]);
-        })
-    })
-    .then(() => {
-        console.log(imagesRefs);
+        setImagesRefs([...res.items]);
+        setIsLoaded(true);
     })
     .catch((error) => {
         console.error(error);
@@ -27,9 +24,10 @@ useEffect(() => {
 
     return(
         <section style = {{backgroundColor: 'white'}}>
-            {imagesRefs.map(
-                (imageRef) => {
-                    return <img src={imageRef} alt="Digital Art"/>;
+            {isLoaded && imagesRefs.map(
+                async (imageRef, id) => {
+                    const url = await getDownloadURL(imageRef)
+                    return <img src={url} alt="Digital Art" key={id}/>
                 }
             )}
         </section>
