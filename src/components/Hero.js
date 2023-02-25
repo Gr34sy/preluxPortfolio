@@ -1,11 +1,13 @@
 import React from "react";
-import masterpiece from "../assets/masterpiece.png";
+import { FirebaseImage } from './FirebaseImage';
 
 export function Hero(){
     return(
         <main className="hero">
             <figure className="hero__container">
-                <img src={masterpiece} className="hero__img"/>
+
+                <FirebaseImage imgNum='1' imgClass="hero__img"/>
+
             </figure>
         </main>
     )
