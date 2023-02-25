@@ -33,9 +33,9 @@ export function Navbar(){
                 </div>
 
                 <ul className="nav__list">
-                    <li><a className="custom-link" href="#">Home</a></li>
+                    <li><a className="custom-link" href="#hero">Home</a></li>
+                    <li><a className="custom-link" href="#about">About Me</a></li>
                     <li><a className="custom-link" href="#">Art</a></li>
-                    <li><a className="custom-link" href="#">Sdad</a></li>
                     <li><a className="custom-link" href="#">Contact</a></li>
                 </ul>
 
@@ -51,9 +51,9 @@ export function Navbar(){
         
         { showMobileList && 
         <ul className="nav__list--mobile display-mobile">
-            <li><a className="custom-link" href="#">Home</a></li>
+            <li><a className="custom-link" href="#hero">Home</a></li>
+            <li><a className="custom-link" href="#about">About Me</a></li>
             <li><a className="custom-link" href="#">Art</a></li>
-            <li><a className="custom-link" href="#">Sdad</a></li>
             <li><a className="custom-link" href="#">Contact</a></li>
         </ul>}
         </>
