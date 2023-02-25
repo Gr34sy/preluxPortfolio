@@ -1,7 +1,38 @@
 .about{
-    min-height: 100vh;
-    width: 100vw;
-    background-color: $turquoise;
-
     @include padding-block-section;
+    background-color: $turquoise;
+    padding-inline: 20px;
+
+    @media(min-width: 800px){
+        padding-inline: 65px;
+    }
+}
+
+.about__first{
+    min-height: 100vh;
+    height: 1px;
+    width: 100%;
+
+    flex-direction: column;
+
+    @media(min-width: 800px){
+        flex-direction: row;
+
+        @include flex-center;
+    }
+}
+
+.about__first-left, .about__first-right{
+    height: 100%;
+    text-align: center;
+}
+
+.about__first-left{
+    background-color: $dark-grey;
+    color: $black;
+    flex-basis: 65%;
+}
+
+.about__first-right{
+    flex-basis: 35%;
 }

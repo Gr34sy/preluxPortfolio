@@ -11,7 +11,13 @@ body{
 }
 
 @mixin padding-block-section{
-    padding-block: 100px;
+    padding-block: 60px;
+}
+
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @mixin display-mobile{
