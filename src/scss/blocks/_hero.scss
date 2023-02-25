@@ -1,5 +1,7 @@
 .hero{
-    padding-block: 120px;
+    @include padding-block-section;
+    
+    padding-top: 120px;
 }
 
 .hero__container{
@@ -12,8 +14,8 @@
         content: '';
         position: absolute;
         inset: 0;
-        // -webkit-box-shadow: inset 1px 1px 20px 5px $black;
-        // -moz-box-shadow: inset 1px 1px 20px 5px $black;
+        -webkit-box-shadow: inset 1px 1px 20px 30px $black;
+        -moz-box-shadow: inset 1px 1px 20px 30px $black;
         box-shadow: inset 1px 1px 20px 30px $black;
     }
 

@@ -39,18 +39,18 @@ export function Navbar(){
                     <li><a className="custom-link" href="#">Contact</a></li>
                 </ul>
 
-                { !showMobileList && <div className="hamburger-icon display-mobile" onClick={() => setShowMobileList(true)}>
+                { !showMobileList && <div className="hamburger-icon" onClick={() => setShowMobileList(true)}>
                     <FontAwesomeIcon icon={faBars}/>
                 </div>}
 
-                { showMobileList && <div className="x-icon mobile-display" onClick={() => setShowMobileList(false)}>
+                { showMobileList && <div className="x-icon" onClick={() => setShowMobileList(false)}>
                     <FontAwesomeIcon icon={faXmark}/>
                 </div>}
             </div>
         </nav>
         
         { showMobileList && 
-        <ul className="nav__list--mobile display-mobile">
+        <ul className="nav__list--mobile">
             <li><a className="custom-link" href="#hero">Home</a></li>
             <li><a className="custom-link" href="#about">About Me</a></li>
             <li><a className="custom-link" href="#">Art</a></li>
