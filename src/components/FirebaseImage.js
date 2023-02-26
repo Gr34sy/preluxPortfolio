@@ -24,7 +24,7 @@ export function FirebaseImage({imgClass, imgNum, format}){
 
     return(
         <>
-            {imgUrl && <img src={imgUrl} alt="Digital Art" className={imgClass}/>}
+            {imgUrl && <img src={imgUrl} alt="Digital Art" className={`firebase-img ${imgClass}`}/>}
         </>
     )
 }
