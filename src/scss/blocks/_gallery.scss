@@ -5,9 +5,17 @@
 
 .gallery__container{
     @include padding;
-    @include flex-center;
-    flex-wrap: wrap;
-    gap: 20px;
+    
+    
+
+    display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+
+    @media (min-width: 1300px){
+        justify-content: space-between;
+    }
 }
 
 .gallery__item{

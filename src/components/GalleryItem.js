@@ -26,7 +26,7 @@ export function GalleryItem({imgNum, format}){
         <>
             {imgUrl && 
             <div className="gallery__item" style={{backgroundImage: `url(${imgUrl})`}}>
-                <a href={imgUrl} target="_blank" class="gallery__link"></a>
+                <a href={imgUrl} target="_blank" className="gallery__link"></a>
             </div>
             }
         </>
