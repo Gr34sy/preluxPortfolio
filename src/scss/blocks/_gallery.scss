@@ -1,19 +1,18 @@
 .gallery{
-    padding-block: $padding-block;
-    padding-inline: 100px;
-
     min-height: 100vh;
     height: 1px;
 }
 
 .gallery__container{
+    @include padding;
     @include flex-center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .gallery__item{
-    width: 25%;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     position: relative;
     background-position: center;
     background-size: cover;
@@ -25,3 +24,4 @@
     inset: 0
     // cursor: pointer;
 }
+

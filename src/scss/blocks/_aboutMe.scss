@@ -1,11 +1,7 @@
 .about{
-    padding-block: $padding-block;
-    background-color: $turquoise;
-    padding-inline: 20px;
+    @include padding;
 
-    @media(min-width: 800px){
-        padding-inline: 65px;
-    }
+    background-color: $turquoise;
 }
 
 .about__section{
@@ -64,8 +60,6 @@
     }
 }
 
-.about__img{
-}
 
 .about__title{
     font-family: $font-logotype;

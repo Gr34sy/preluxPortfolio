@@ -10,7 +10,14 @@ body{
     background-color: $black
 }
 
-$padding-block: 60px;
+@mixin padding{
+    padding-block: 60px;
+    padding-inline: 20px;
+
+    @media(min-width: 800px){
+        padding-inline: 65px;
+    }
+}
 
 
 @mixin flex-center{
