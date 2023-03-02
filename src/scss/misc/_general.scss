@@ -10,9 +10,8 @@ body{
     background-color: $black
 }
 
-@mixin padding-block-section{
-    padding-block: 60px;
-}
+$padding-block: 60px;
+
 
 @mixin flex-center{
     display: flex;

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import firebaseApp from "../firebase";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
-export function FirebaseImage({imgClass, imgNum, format}){
+export function GalleryItem({imgNum, format}){
     const [imgUrl, setImgUrl] = useState(null);
 
     useEffect(() => {
@@ -24,7 +24,11 @@ export function FirebaseImage({imgClass, imgNum, format}){
 
     return(
         <>
-            {imgUrl &&  <img src={imgUrl} alt="Digital Art" className={`firebase-img ${imgClass}`}/>}
+            {imgUrl && 
+            <div className="gallery__item" style={{backgroundImage: `url(${imgUrl})`}}>
+                <a href={imgUrl} target="_blank" class="gallery__link"></a>
+            </div>
+            }
         </>
     )
 }

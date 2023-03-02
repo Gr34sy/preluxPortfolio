@@ -1,5 +1,5 @@
 .about{
-    @include padding-block-section;
+    padding-block: $padding-block;
     background-color: $turquoise;
     padding-inline: 20px;
 

@@ -1,5 +1,5 @@
 .hero{
-    @include padding-block-section;
+    padding-block: $padding-block;
     
     padding-top: 120px;
 }
