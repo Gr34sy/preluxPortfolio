@@ -31,7 +31,6 @@ export function AboutMe(){
             <article className="about__section about__second">
 
                 <figure className="about__left">
-                    <FirebaseImage imgNum='4' imgClass="about__img" format="jpg" />
                     <FirebaseImage imgNum='5' imgClass="about__img" format="png" />
                 </figure>
                 

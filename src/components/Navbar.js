@@ -35,7 +35,7 @@ export function Navbar(){
                 <ul className="nav__list">
                     <li><a className="custom-link" href="#hero">Home</a></li>
                     <li><a className="custom-link" href="#about">About Me</a></li>
-                    <li><a className="custom-link" href="#">Art</a></li>
+                    <li><a className="custom-link" href="#gallery">Gallery</a></li>
                     <li><a className="custom-link" href="#">Contact</a></li>
                 </ul>
 
@@ -53,7 +53,7 @@ export function Navbar(){
         <ul className="nav__list--mobile">
             <li><a className="custom-link" href="#hero">Home</a></li>
             <li><a className="custom-link" href="#about">About Me</a></li>
-            <li><a className="custom-link" href="#">Art</a></li>
+            <li><a className="custom-link" href="#gallery">Gallery</a></li>
             <li><a className="custom-link" href="#">Contact</a></li>
         </ul>}
         </>

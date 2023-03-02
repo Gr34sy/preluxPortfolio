@@ -3,6 +3,14 @@
     height: 1px;
 }
 
+.gallery__title{
+    text-align: center;
+    font-family: $font-logotype;
+    color: $turquoise;
+    padding-top: $padding-block;
+    font-size: $h-size;
+}
+
 .gallery__container{
     @include padding;
     
@@ -31,5 +39,12 @@
     position: absolute;
     inset: 0
     // cursor: pointer;
+}
+
+.gallery__more-art{
+    min-height: 30vh;
+    background-color: $turquoise;
+
+    @include padding;
 }
 
