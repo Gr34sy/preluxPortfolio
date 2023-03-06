@@ -27,7 +27,7 @@ export function Navbar(){
                     <a href="#">
                         <img src={logo} alt="logo"/>
                     </a>
-                    <p className={scroll>50 ? 'logotype logotype--sticky' : 'logotype'}>
+                    <p className='logotype'>
                         Prelux Art
                     </p>
                 </div>

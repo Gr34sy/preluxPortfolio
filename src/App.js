@@ -5,6 +5,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AboutMe } from './components/AboutMe';
 import { Gallery } from './components/Gallery';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero/>
       <AboutMe/>
       <Gallery/>
+      <Footer/>
     </div>
   );
 }
