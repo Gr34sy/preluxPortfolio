@@ -77,14 +77,13 @@ $nav-img: url('../../assets/navbarImg.png');
 
 .nav__list--mobile{
     text-align: center;
-    width: 90%;
+    width: 100%;
     font-size: 1.2rem;
     background-color: $turquoise;
     position: fixed;
-    top: 100px;
-    left: 0px;
-    transition: 0.5s;
-    border-top-right-radius: 5px;
+    top: 93px;
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     z-index: 5;
 
