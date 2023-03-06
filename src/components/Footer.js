@@ -5,13 +5,11 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 export function Footer(){
     return(
-        
-        <footer className="footer">
-            {/* <p>Find me on Instagram to see more of my artworks!</p>
+        <footer className="footer" id="footer">
+            <p>Find me on Instagram to see more of my artworks!</p>
             <a href="">
                 <FontAwesomeIcon icon={faInstagram} />
-            </a> */}
+            </a>
         </footer>
-        
     )
 }

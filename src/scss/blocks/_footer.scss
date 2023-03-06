@@ -1,3 +1,7 @@
 .footer{
-    
+    background-color: $turquoise;
+    justify-content: space-around;
+
+    @include flex;
+    @include padding;
 }

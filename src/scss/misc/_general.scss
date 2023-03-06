@@ -10,14 +10,14 @@ body{
     background-color: $black
 }
 
-$padding-block: 60px;
 $border:  4px solid $turquoise;
 
 @mixin padding{
-    padding-block: $padding-block;
+    padding-block: 30px;
     padding-inline: 20px;
 
-    @media(min-width: 800px){
+    @media(min-width: 850px){
+        $padding-block: 60px;
         padding-inline: 65px;
     }
 }
@@ -31,7 +31,7 @@ $border:  4px solid $turquoise;
 @mixin display-mobile{
     display: block;
 
-    @media(min-width: 800px){
+    @media(min-width: 850px){
         display: none;
     }
 }

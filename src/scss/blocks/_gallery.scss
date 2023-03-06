@@ -1,13 +1,12 @@
 .gallery{
     min-height: 100vh;
-    height: 1px;
 }
 
 .gallery__title{
     text-align: center;
     font-family: $font-logotype;
     color: $turquoise;
-    padding-top: $padding-block;
+    padding-top: 20px;
     font-size: $h-size;
 }
 
