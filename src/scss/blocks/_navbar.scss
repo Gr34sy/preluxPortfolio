@@ -1,9 +1,10 @@
+$nav-img: url('../../assets/navbarImg.png');
 
 .navbar{
     position: fixed;
     z-index: 5;
     width: 100%;
-    background-color: $black;
+    background-image: $nav-img;
     padding-top: 20px;
     transition: 0.5s;
     font-family: $font-main;
@@ -59,7 +60,7 @@
 
 .sticky{
     padding: 0;
-    background-color: $turquoise;
+    background-image: $nav-img;
 }
 
 .x-icon, .hamburger-icon{

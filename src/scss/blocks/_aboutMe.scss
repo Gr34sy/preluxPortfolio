@@ -1,15 +1,13 @@
 .about{
     @include padding;
-
-    background-color: $turquoise;
 }
 
 .about__section{
-    border: 4px solid $black;
+    border: $border;
     width: 100%;
 
     flex-direction: column-reverse;
-    @include flex-center;
+    @include flex;
 
     @media(min-width: 1380px){
         align-items: flex-start;
@@ -21,7 +19,7 @@
         flex-direction: row;
 
         .about__right{
-            border-left: 4px solid $black;
+            border-left: 4px solid $turquoise;
         }
     }
 }
@@ -37,7 +35,7 @@
         flex-direction:  row-reverse;
 
         .about__right{
-            border-right: 4px solid $black;
+            border-right: 4px solid $turquoise;
         }
     }
 }
@@ -65,7 +63,7 @@
     font-family: $font-logotype;
     font-size: $h-size;
     font-weight: 800;
-    color: $black;
+    color: $turquoise;
 }
 
 .about__text{

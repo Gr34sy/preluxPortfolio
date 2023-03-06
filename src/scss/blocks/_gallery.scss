@@ -41,10 +41,12 @@
     // cursor: pointer;
 }
 
-.gallery__more-art{
+.footer{
     min-height: 30vh;
     background-color: $turquoise;
+    justify-content: space-around;
 
+    @include flex;
     @include padding;
 }
 
