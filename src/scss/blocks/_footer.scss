@@ -1,7 +1,46 @@
 .footer{
     background-color: $turquoise;
-    justify-content: space-around;
-
-    @include flex;
     @include padding;
+
+    a{
+        color: $white;
+    }
+}
+
+.footer__container{
+
+    @media(min-width: 1050px){
+        @include flex;
+    }
+}
+
+.footer__logo-box{
+    @include flex;
+    gap: 10px;
+
+    span{
+        color: $white;
+        font-size: 1.2rem;
+        font-family: $font-main;
+    }
+}
+
+.footer__ig-link{
+    @include flex;
+    justify-content: center;
+    gap: 20px;
+    color: $white;
+    font-family: $font-main;
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+    margin-top: 20px;
+
+    @media(min-width: 1050px){
+        margin-top: 0;
+    }
+}
+
+.footer__icon{
+    font-size: 2rem;
 }
